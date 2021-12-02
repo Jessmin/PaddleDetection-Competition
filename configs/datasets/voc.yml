@@ -4,16 +4,16 @@ num_classes: 20
 
 TrainDataset:
   !VOCDataSet
-    dataset_dir: dataset/voc
-    anno_path: trainval.txt
-    label_list: label_list.txt
+    dataset_dir: /home/data/VOC
+    anno_path: train.txt
+    label_list: label.txt
     data_fields: ['image', 'gt_bbox', 'gt_class', 'difficult']
 
 EvalDataset:
   !VOCDataSet
     dataset_dir: dataset/voc
-    anno_path: test.txt
-    label_list: label_list.txt
+    anno_path: train.txt
+    label_list: label.txt
     data_fields: ['image', 'gt_bbox', 'gt_class', 'difficult']
 
 TestDataset:
