@@ -1,14 +1,5 @@
 import json
 
-
-# slagcar渣土车
-# car 小汽车：轿车、跑车、SUV、商务车、小型面包车等四轮小汽车
-# tricar 三轮小汽车：如老年代步三轮车，三轮自行车、三轮摩托车和三轮电动车
-# motorbike摩托车：含电瓶车、电动车
-# bicycle 两轮自行车：不含三轮自行车
-# bus公共汽车、客车
-# truck大型货车、小型货车
-# tractor 拖拉机
 def init():
     """Initialize model
         Returns: model

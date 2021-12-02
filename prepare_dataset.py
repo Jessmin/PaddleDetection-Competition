@@ -22,7 +22,7 @@ for item in jpgs:
     shutil.copy(item, dst)
 for item in xmls:
     _, fname = os.path.split(item)
-    dst = os.path.join(JPEGIMAGES_DIR, fname)
+    dst = os.path.join(ANNO_DIR, fname)
     shutil.copy(item, dst)
 # convert dataset
 imgs = os.listdir(JPEGIMAGES_DIR)
@@ -30,10 +30,11 @@ imgs.sort()
 f_val = open(f'{DATASET_BASE_DIR}/val.txt', 'w')
 with open(f'{DATASET_BASE_DIR}/train.txt', 'w') as f:
     for idx, item in enumerate(imgs):
+        line = f"JPEGImages/{item.split('.')[0]}.jpg Annotations/{item.split('.')[0]}.xml\n"
         if random.randint(0, 100) < 90:
-            f.write(f"{item.split('.')[0]}\n")
+            f.write(line)
         else:
-            f_val.write(f"{item.split('.')[0]}\n")
+            f_val.write(line)
 
 label_list = ['slagcar', 'car', 'tricar', 'motorbike', 'bicycle', 'bus', 'truck', 'tractor']
 with open(f'{DATASET_BASE_DIR}/label.txt', 'w') as f:

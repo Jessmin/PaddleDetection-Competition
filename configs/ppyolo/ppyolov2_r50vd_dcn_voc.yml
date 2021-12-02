@@ -6,12 +6,12 @@ _BASE_: [
   './_base_/ppyolov2_reader.yml',
 ]
 
-snapshot_epoch: 83
+snapshot_epoch: 1
 weights: output/ppyolov2_r50vd_dcn_voc/model_final
 
 TrainReader:
   mixup_epoch: 350
-  batch_size: 12
+  batch_size: 8
 
 # set collate_batch to false because ground-truth info is needed
 # on voc dataset and should not collate data in batch when batch size
