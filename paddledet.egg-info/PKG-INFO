@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: paddledet
+Version: 2.3.0
+Summary: Object detection and instance segmentation toolkit based on PaddlePaddle
+Home-page: https://github.com/PaddlePaddle/PaddleDetection
+Author: PaddlePaddle
+License: Apache License 2.0
+Download-URL: https://github.com/PaddlePaddle/PaddleDetection.git
+Description: PaddleDetection 在竞赛中的应用 已经参加的比赛有:
+        
+        | 比赛平台 | 比赛名称 | 链接 | 分支名称        |
+        | --- | --- | --- |-------------|
+        | 极市 | 渣土车识别 | https://www.cvmart.net/topList/10058?dbType=1&tab=RealTime | jishi-渣土车识别 |
+        
+Keywords: ppdet paddle ppyolo
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
